@@ -1,5 +1,6 @@
-# Linq_Compare_NumberStringArray
-#Contrast two array or list is include,the elements are num-str,for example:
+### Linq_List_Contrast_Baseon_Array(Linq筛选满足数组条件的List集合)
+#### Contrast two array or list is include,the elements are num-str,
+for example:
 
 Scene One：
     list is 
