@@ -1,5 +1,5 @@
 # Linq_Compare_NumberStringArray
-Contrast two array or list is include,the elements are num-str,for example:
+#Contrast two array or list is include,the elements are num-str,for example:
 
 Scene One：
     list is 
