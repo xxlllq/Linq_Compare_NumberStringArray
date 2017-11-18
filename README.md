@@ -1,7 +1,7 @@
 ### Linq_List_Contrast_Baseon_Array 使用Linq筛选满足数组条件的List集合
 #### For Example: 案例
 
-** List **
+**List**
 ``` C#
     List<Size> strList = new List<Size>();      
     strList.Add(new Size { L = "225.00", W = "170.00", T = "38.00" });
