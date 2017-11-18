@@ -11,6 +11,8 @@ namespace Linq_Compare_NumberStringArray
         static void Main(string[] args)
         {
             string[] str1 = { "", "", "4" };
+            List<string> lwt = null;
+            
             List<Size> strList = new List<Size>();
             strList.Add(new Size { L = "225.00", W = "170.00", T = "38.00" });
             strList.Add(new Size { L = "505.00", W = "158.00", T = "162.00" });
@@ -19,9 +21,9 @@ namespace Linq_Compare_NumberStringArray
             strList.Add(new Size { L = "54.00", W = "23.00", T = "41.00" });
             var sd = strList.Where(m =>
             {
-                List<string> lwt = new List<string> { m.L.ToString(), m.W.ToString(), m.T.ToString() };
+                lwt = new List<string> { m.L, m.W, m.T};
                 var filter = str1.Where(x => !string.IsNullOrEmpty(x));
-                List<bool> flagList = new List<bool>();
+                var count = 0;
                 filter.ToList().ForEach(x =>
                 {
                     var flag = false;
@@ -29,15 +31,14 @@ namespace Linq_Compare_NumberStringArray
                     {
                         if (item.StartsWith(x))
                         {
-                            flag = true;
+                            count++;
                             lwt.Remove(item);
                             break;
                         }
                     }
-                    flagList.Add(flag);
                 });
 
-                if (flagList.All(x => x))
+                if (filter.Count() == count)
                 {
                     return true;
                 }
