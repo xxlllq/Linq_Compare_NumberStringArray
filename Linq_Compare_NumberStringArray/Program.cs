@@ -21,7 +21,7 @@ namespace Linq_Compare_NumberStringArray
             strList.Add(new Size { L = "54.00", W = "23.00", T = "41.00" });
             var sd = strList.Where(m =>
             {
-                lwt = new List<string> { m.L, m.W, m.T};
+                lwt = new List<string> { m.L, m.W, m.T };
                 var filter = str1.Where(x => !string.IsNullOrEmpty(x));
                 var count = 0;
                 filter.ToList().ForEach(x =>
