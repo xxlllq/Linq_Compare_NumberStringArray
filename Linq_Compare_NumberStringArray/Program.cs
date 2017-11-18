@@ -47,11 +47,7 @@ namespace Linq_Compare_NumberStringArray
 
             var 代码 = "Program";
         }
-
-
-
-
-
+ 
         public class Size
         {
             /// <summary>
