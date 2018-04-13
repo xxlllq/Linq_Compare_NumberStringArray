@@ -1,5 +1,5 @@
 ### Linq_List_Contrast_Baseon_Array 使用Linq筛选满足数组条件的List集合
-#### For Example: 案例
+#### For Example: [案例](https://xxlllq.github.io/readme/2017/12/09/linq-list-contrast-baseon-array.html)
 
 **List**
 ``` C#
